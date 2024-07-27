@@ -1,0 +1,39 @@
+/*Fuentes de Google Fonts importadas*/
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+header {
+    /*Definimos que tiene display flex utilizando Tailwind*/
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 36px;
+    color: white;
+}
+
+aside div {
+    background-color: rgb(224, 81, 224);
+    color: black;
+}
+
+div img, #img3 img{
+    width: 50%;
+}
+
+div {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#img3 img {
+    width: 40%;
+}

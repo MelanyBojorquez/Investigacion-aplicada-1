@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Investigación aplicada: WEP APP - Lenguaje Interpretado en el cliente</title>
+</head>
+<body>
+    <header class="flex h-[15vh] w-[100%]">
+        <h1>Centroamerica</h1>
+    </header>
+    <!--Contenedor principal-->
+    <main class="grid grid-cols-1 grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 h-[70vh] mt-4">
+        <!--Contenedor del texto-->
+        <aside class="flex flex-col gap-4 h-full">
+            <!--Texto que aparecerá sin importar el tamaño de la pantalla-->
+            <div class="p-4 flex-1">
+                <p>Belice</p>
+            </div>
+            <div class="p-4 flex-1">
+                <p>Guatemala</p>
+            </div>
+            <div class="p-4 flex-1">
+                <p>Honduras</p>
+            </div> 
+
+            <!--Texto que se mostrará dependiendo del tamaño de la pantalla-->
+            <div class="md:flex lg:hidden p-4 flex-1">
+                <p>Nicaragua</p>
+            </div>
+            <div class="hidden md:flex lg:hidden p-4 flex-1">
+                <p>Costa Rica</p>
+            </div>
+            <div class="hidden md:flex lg:hidden p-4 flex-1 sm:grid-cols-1">
+                <p>Panama</p>
+            </div>
+        </aside>
+
+        <!--Contenedor para las imagenes-->
+        <!--Imagen 1-->
+        <div class="bg-[#aaaa] flex h-full">
+            <img class="h-full object-contain" src="images/mapa.png" alt="Mapa de centroamerica">
+        </div>
+        <!--Imagen 2-->
+        <div class="bg-[#aaaa] hidden h-full lg:flex col-span-1 md:col-span-2 lg:col-span-1">
+            <img class="h-full object-contain sm:flex col-span-1" src="images/el-salvador.png" alt="El Salvador">
+        </div>
+
+        <!--Imagen 2 (para celulares)-->
+        <div id="img3" class="flex justify content sm:flex col-span-2 md:hidden bg-gray-400 p-4">
+            <img class="h-full object-contain sm:order-1 col-span-1" src="images/el-salvador.png" alt="El Salvador">
+        </div>
+    </main>
+</body>
+</html>
